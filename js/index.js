@@ -1,0 +1,26 @@
+$(document).ready(function(){
+  $(".thumbnail1").mouseenter(function(){
+    $(".project1").show();
+    $(".project2").hide();
+    $(".project3").hide();
+    $(".thumbnail1").addClass("thumbnailsactive");
+    $(".thumbnail2").removeClass("thumbnailsactive");
+    $(".thumbnail3").removeClass("thumbnailsactive");
+  });
+    $(".thumbnail2").mouseenter(function(){
+    $(".project2").show();
+    $(".project1").hide();
+    $(".project3").hide();
+    $(".thumbnail2").addClass("thumbnailsactive");
+    $(".thumbnail1").removeClass("thumbnailsactive");
+    $(".thumbnail3").removeClass("thumbnailsactive");
+  });
+    $(".thumbnail3").mouseenter(function(){
+    $(".project3").show();
+    $(".project2").hide();
+    $(".project1").hide();
+    $(".thumbnail3").addClass("thumbnailsactive");
+    $(".thumbnail2").removeClass("thumbnailsactive");
+    $(".thumbnail1").removeClass("thumbnailsactive");
+  });
+});
