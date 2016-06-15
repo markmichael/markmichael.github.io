@@ -74,13 +74,15 @@ h1{
 .project2{
   display:none;
 }
-.project3{
+.project3, .project4{
   display:none;
 }
 .projectwrapper{
   height:300px;
 }
-.project3>.col-sm-6>.projectimagecontainer{
+.project3>.col-sm-6>.projectimagecontainer,.project4>.col-sm-6>.projectimagecontainer{
+  padding-top:5%;
+}{
   padding-top:5%;
 }
 .wrapper3{

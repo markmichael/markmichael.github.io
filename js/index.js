@@ -3,6 +3,8 @@ $(document).ready(function(){
     $(".project1").show();
     $(".project2").hide();
     $(".project3").hide();
+    $(".project4").hide();
+    $(".thumbnail4").removeClass("thumbnailsactive");
     $(".thumbnail1").addClass("thumbnailsactive");
     $(".thumbnail2").removeClass("thumbnailsactive");
     $(".thumbnail3").removeClass("thumbnailsactive");
@@ -11,6 +13,8 @@ $(document).ready(function(){
     $(".project2").show();
     $(".project1").hide();
     $(".project3").hide();
+    $(".project4").hide();
+    $(".thumbnail4").removeClass("thumbnailsactive");
     $(".thumbnail2").addClass("thumbnailsactive");
     $(".thumbnail1").removeClass("thumbnailsactive");
     $(".thumbnail3").removeClass("thumbnailsactive");
@@ -19,7 +23,19 @@ $(document).ready(function(){
     $(".project3").show();
     $(".project2").hide();
     $(".project1").hide();
+    $(".project4").hide();
+    $(".thumbnail4").removeClass("thumbnailsactive");
     $(".thumbnail3").addClass("thumbnailsactive");
+    $(".thumbnail2").removeClass("thumbnailsactive");
+    $(".thumbnail1").removeClass("thumbnailsactive");
+  });
+    $(".thumbnail4").mouseenter(function(){
+    $(".project3").hide();
+    $(".project2").hide();
+    $(".project1").hide();
+    $(".project4").show();
+    $(".thumbnail4").addClass("thumbnailsactive");
+    $(".thumbnail3").removeClass("thumbnailsactive");
     $(".thumbnail2").removeClass("thumbnailsactive");
     $(".thumbnail1").removeClass("thumbnailsactive");
   });
